@@ -22,7 +22,7 @@ public class Main {
 		String token = "";
 		try{
 			token = JWT.create()
-		    .withClaim("email", "ostret@softserveinc.com")
+		    .withClaim("email", "email")
 		    .withClaim("publicKey","publicKey")
 		    .sign(Algorithm.HMAC256("privatekey"));
 		}
